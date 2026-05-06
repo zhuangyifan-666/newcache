@@ -1,0 +1,3 @@
+name,kind,target_rr,delta,num_samples,elapsed_sec,cache_queries,cache_hits,cache_refreshes,cache_forced_refreshes,actual_rr,cache_hit_rate,denoiser_time_sec,max_consecutive_hits,psnr_mean,psnr_min,ssim_mean,ssim_min,lpips_mean,lpips_max,per_sample_csv
+full_reference,full,1.0,,1,12.394305809983052,99,0,99,99,1.0,0.0,11.820874560682569,0,,,,,,,
+uniform_rr0p3,uniform,0.3,,1,2.9488086809869856,99,69,30,30,0.30303030303030304,0.696969696969697,2.3004167230101302,3,23.05608367919922,23.05608367919922,0.8247826099395752,0.8247826099395752,0.3140714168548584,0.3140714168548584,/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_lpips_1sample/uniform_rr0p3/per_sample_metrics.csv

@@ -1,0 +1,8 @@
+Qwen
+tools
+ckpts
+universal_pix_workdirs
+pretrained_weights
+wandb
+merge_weight.py
+*.pyc

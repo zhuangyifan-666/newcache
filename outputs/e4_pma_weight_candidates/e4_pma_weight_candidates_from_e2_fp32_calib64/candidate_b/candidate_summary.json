@@ -1,0 +1,126 @@
+{
+  "candidate": "candidate_b",
+  "candidate_label": "B_soft_early_dino_lpips",
+  "stage_weights": "early=0.70,0.20,0.10;middle=0.45,0.35,0.20;late=0.30,0.30,0.40",
+  "schedule_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_b/matched_schedules",
+  "normalization": {
+    "raw": {
+      "median": 0.018181102816015482,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 3.523367429470745,
+      "transform": "identity"
+    },
+    "sea": {
+      "median": 0.020624883003657217,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 249.14755799041197,
+      "transform": "log1p"
+    },
+    "dino": {
+      "median": 0.00019428133964538574,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 248.49331799355704,
+      "transform": "identity"
+    },
+    "lpips": {
+      "median": 0.0002564102178439498,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 218.98109866440987,
+      "transform": "identity"
+    },
+    "pma_nogate_weights": {
+      "sea": 0.4,
+      "dino": 0.3,
+      "lpips": 0.3
+    },
+    "pma_stage_weights": {
+      "early": {
+        "sea": 0.7,
+        "dino": 0.2,
+        "lpips": 0.1
+      },
+      "middle": {
+        "sea": 0.45,
+        "dino": 0.35,
+        "lpips": 0.2
+      },
+      "late": {
+        "sea": 0.3,
+        "dino": 0.3,
+        "lpips": 0.4
+      }
+    }
+  },
+  "schedule_rows": [
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.3,
+      "selected_delta": 7.237022341772045,
+      "calibration_rr": 0.30003156565656564,
+      "test_rr": 0.3020307239057239,
+      "all_rr": 0.30153093434343436,
+      "calibration_refreshes_per_sample": 29.703125,
+      "test_refreshes_per_sample": 29.901041666666668,
+      "all_refreshes_per_sample": 29.8515625,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_b",
+      "candidate_label": "B_soft_early_dino_lpips",
+      "stage_weights": "early=0.70,0.20,0.10;middle=0.45,0.35,0.20;late=0.30,0.30,0.40",
+      "target_abs_error": 3.156565656564636e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012933751972531516,
+      "max_sample_score_sum": 694.4137815741038,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_b/matched_schedules/pma_stageaware_oracle_rr0p30.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.4,
+      "selected_delta": 3.523810018353683,
+      "calibration_rr": 0.3999368686868687,
+      "test_rr": 0.4006734006734007,
+      "all_rr": 0.4004892676767677,
+      "calibration_refreshes_per_sample": 39.59375,
+      "test_refreshes_per_sample": 39.666666666666664,
+      "all_refreshes_per_sample": 39.6484375,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_b",
+      "candidate_label": "B_soft_early_dino_lpips",
+      "stage_weights": "early=0.70,0.20,0.10;middle=0.45,0.35,0.20;late=0.30,0.30,0.40",
+      "target_abs_error": 6.313131313134823e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012933751972531516,
+      "max_sample_score_sum": 694.4137815741038,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_b/matched_schedules/pma_stageaware_oracle_rr0p40.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.5,
+      "selected_delta": 1.8675332177706045,
+      "calibration_rr": 0.5,
+      "test_rr": 0.50184132996633,
+      "all_rr": 0.5013809974747475,
+      "calibration_refreshes_per_sample": 49.5,
+      "test_refreshes_per_sample": 49.682291666666664,
+      "all_refreshes_per_sample": 49.63671875,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_b",
+      "candidate_label": "B_soft_early_dino_lpips",
+      "stage_weights": "early=0.70,0.20,0.10;middle=0.45,0.35,0.20;late=0.30,0.30,0.40",
+      "target_abs_error": 0.0,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012933751972531516,
+      "max_sample_score_sum": 694.4137815741038,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_b/matched_schedules/pma_stageaware_oracle_rr0p50.npz"
+    }
+  ]
+}

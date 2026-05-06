@@ -1,0 +1,81 @@
+{
+  "config": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/configs_c2i/PixelGen_XL_without_CFG.yaml",
+  "ckpt": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/ckpts/PixelGen_XL_80ep.ckpt",
+  "output_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e0_sanity/e0_smoke_2samples",
+  "device": "cuda:0",
+  "torch_version": "2.7.1+cu126",
+  "cuda_device_name": "NVIDIA GeForce RTX 3090",
+  "num_pairs": 2,
+  "latent_shape": [
+    3,
+    256,
+    256
+  ],
+  "sampler": "HeunSamplerJiT",
+  "num_steps": 50,
+  "guidance": 1.0,
+  "timeshift": 2.0,
+  "exact_henu": true,
+  "weight_load": {
+    "loaded": 406,
+    "total": 406,
+    "missing": 0,
+    "mismatched": 0,
+    "used_prefixes": [
+      "ema_denoiser."
+    ],
+    "missing_examples": [],
+    "mismatched_examples": []
+  },
+  "args": {
+    "config": "configs_c2i/PixelGen_XL_without_CFG.yaml",
+    "ckpt": "ckpts/PixelGen_XL_80ep.ckpt",
+    "output_dir": "outputs/e0_sanity",
+    "run_id": "e0_smoke_2samples",
+    "device": "cuda:0",
+    "batch_size": 1,
+    "num_samples": 2,
+    "classes": null,
+    "seeds": null,
+    "seed_start": 0,
+    "noise_scale": 1.0,
+    "autocast_dtype": "bf16",
+    "no_autocast": false,
+    "allow_tf32": false,
+    "deterministic_algorithms": false,
+    "global_seed": 2026,
+    "preview_count": 2,
+    "preview_size": 128,
+    "preview_columns": 4,
+    "max_abs_tol": 1e-05,
+    "min_psnr": 80.0,
+    "weight_prefixes": "ema_denoiser.,denoiser.,"
+  },
+  "run_a": {
+    "elapsed_sec": 33.298911970021436,
+    "denoiser_calls": 198,
+    "xhat_predictor_global_min": -1.1328125,
+    "xhat_predictor_global_max": 1.2734375,
+    "xhat_corrector_global_min": -1.1328125,
+    "xhat_corrector_global_max": 1.265625
+  },
+  "run_b": {
+    "elapsed_sec": 6.411580239015166,
+    "denoiser_calls": 198,
+    "xhat_predictor_global_min": -1.1328125,
+    "xhat_predictor_global_max": 1.2734375,
+    "xhat_corrector_global_min": -1.1328125,
+    "xhat_corrector_global_max": 1.2734375
+  },
+  "comparison": {
+    "passed": false,
+    "num_samples": 2,
+    "max_abs": 0.015587180852890015,
+    "mean_max_abs": 0.007793590426445007,
+    "min_psnr_db": 58.636790899294596,
+    "mean_psnr_db": 58.636790899294596,
+    "uint8_equal_count": 1,
+    "uint8_equal_fraction": 0.5,
+    "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e0_sanity/e0_smoke_2samples/per_sample_determinism.csv"
+  }
+}

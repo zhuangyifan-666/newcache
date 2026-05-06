@@ -1,0 +1,13 @@
+{
+  "metadata": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/metadata.json",
+  "schedule_summary": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/schedule_summary.csv",
+  "threshold_vs_rr": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/threshold_vs_rr.csv",
+  "average_metric_curves": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/average_metric_curves.csv",
+  "stage_refresh_density": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/stage_refresh_density.csv",
+  "stage_kind_refresh_density": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/stage_kind_refresh_density.csv",
+  "matched_schedules": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/matched_schedules",
+  "refresh_heatmaps": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e3_schedule_oracle/e3_main_256_from_e2_fp32/refresh_heatmaps",
+  "elapsed_sec": 15.810951299965382,
+  "schedule_rows": 21,
+  "threshold_rows": 1494
+}

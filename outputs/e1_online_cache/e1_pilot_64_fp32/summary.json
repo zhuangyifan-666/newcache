@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "config": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/configs_c2i/PixelGen_XL_without_CFG.yaml",
+    "ckpt": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/ckpts/PixelGen_XL_80ep.ckpt",
+    "output_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32",
+    "device": "cuda:0",
+    "torch_version": "2.7.1+cu126",
+    "cuda_device_name": "NVIDIA GeForce RTX 3090",
+    "num_samples": 64,
+    "batch_size": 1,
+    "latent_shape": [
+      3,
+      256,
+      256
+    ],
+    "sampler": "HeunSamplerJiT",
+    "num_steps": 50,
+    "denoiser_opportunities_per_sample": 99,
+    "allow_fused_sdpa": false,
+    "no_autocast": true,
+    "lpips_status": "",
+    "load_info": {
+      "loaded": 406,
+      "total": 406,
+      "missing": 0,
+      "mismatched": 0,
+      "used_prefixes": [
+        "ema_denoiser."
+      ],
+      "missing_examples": [],
+      "mismatched_examples": []
+    },
+    "args": {
+      "config": "configs_c2i/PixelGen_XL_without_CFG.yaml",
+      "ckpt": "ckpts/PixelGen_XL_80ep.ckpt",
+      "output_dir": "outputs/e1_online_cache",
+      "run_id": "e1_pilot_64_fp32",
+      "device": "cuda:0",
+      "batch_size": 1,
+      "num_samples": 64,
+      "classes": null,
+      "seeds": null,
+      "seed_start": 0,
+      "noise_scale": 1.0,
+      "methods": "uniform,raw,sea",
+      "target_rrs": "0.30,0.50",
+      "online_deltas": "0.03,0.05,0.08,0.10,0.15,0.20,0.30,0.50,0.80",
+      "calibrate_online": true,
+      "calib_samples": 8,
+      "warmup_calls": 5,
+      "max_skip_calls": 4,
+      "sea_filter_beta": 2.0,
+      "sea_filter_eps": 1e-06,
+      "autocast_dtype": "bf16",
+      "no_autocast": true,
+      "allow_tf32": false,
+      "deterministic_algorithms": false,
+      "allow_fused_sdpa": false,
+      "global_seed": 2026,
+      "skip_lpips": false,
+      "lpips_net": "alex",
+      "save_image_count": 16,
+      "preview_size": 128,
+      "preview_columns": 4,
+      "weight_prefixes": "ema_denoiser.,denoiser.,"
+    }
+  },
+  "calibration": {
+    "raw": [
+      {
+        "cache_queries": 792,
+        "cache_hits": 368,
+        "cache_refreshes": 424,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.5353535353535354,
+        "cache_hit_rate": 0.46464646464646464,
+        "avg_rel_l1": 0.021802621677593517,
+        "max_consecutive_hits": 1,
+        "denoiser_time_sec": 29.800245149992406,
+        "elapsed_sec": 35.99930028698873,
+        "metric": "raw",
+        "delta": 0.03,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 509,
+        "cache_refreshes": 283,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.3573232323232323,
+        "cache_hit_rate": 0.6426767676767676,
+        "avg_rel_l1": 0.02175153564238013,
+        "max_consecutive_hits": 3,
+        "denoiser_time_sec": 19.941998021502513,
+        "elapsed_sec": 26.00406763702631,
+        "metric": "raw",
+        "delta": 0.05,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 574,
+        "cache_refreshes": 218,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.27525252525252525,
+        "cache_hit_rate": 0.7247474747474747,
+        "avg_rel_l1": 0.02177213691985772,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 16.752233309845906,
+        "elapsed_sec": 23.965298811963294,
+        "metric": "raw",
+        "delta": 0.08,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 585,
+        "cache_refreshes": 207,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.26136363636363635,
+        "cache_hit_rate": 0.7386363636363636,
+        "avg_rel_l1": 0.021725511061951416,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 15.930744928540662,
+        "elapsed_sec": 23.098129428981338,
+        "metric": "raw",
+        "delta": 0.1,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 599,
+        "cache_refreshes": 193,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.24368686868686867,
+        "cache_hit_rate": 0.7563131313131313,
+        "avg_rel_l1": 0.02168591000504664,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 12.039648283098359,
+        "elapsed_sec": 17.048047950025648,
+        "metric": "raw",
+        "delta": 0.15,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 600,
+        "cache_refreshes": 192,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.24242424242424243,
+        "cache_hit_rate": 0.7575757575757576,
+        "avg_rel_l1": 0.021681765566673547,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 13.001979338703677,
+        "elapsed_sec": 18.724153029033914,
+        "metric": "raw",
+        "delta": 0.2,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 600,
+        "cache_refreshes": 192,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.24242424242424243,
+        "cache_hit_rate": 0.7575757575757576,
+        "avg_rel_l1": 0.021681765566673547,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 13.40195704990765,
+        "elapsed_sec": 19.647687365009915,
+        "metric": "raw",
+        "delta": 0.3,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 600,
+        "cache_refreshes": 192,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.24242424242424243,
+        "cache_hit_rate": 0.7575757575757576,
+        "avg_rel_l1": 0.021681765566673547,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 13.126887803664431,
+        "elapsed_sec": 18.96645356703084,
+        "metric": "raw",
+        "delta": 0.5,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 600,
+        "cache_refreshes": 192,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.24242424242424243,
+        "cache_hit_rate": 0.7575757575757576,
+        "avg_rel_l1": 0.021681765566673547,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 13.106111309316475,
+        "elapsed_sec": 18.8977676720242,
+        "metric": "raw",
+        "delta": 0.8,
+        "calib_samples": 8
+      }
+    ],
+    "sea": [
+      {
+        "cache_queries": 792,
+        "cache_hits": 368,
+        "cache_refreshes": 424,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.5353535353535354,
+        "cache_hit_rate": 0.46464646464646464,
+        "avg_rel_l1": 1.782664508399377,
+        "max_consecutive_hits": 1,
+        "denoiser_time_sec": 20.03503742144676,
+        "elapsed_sec": 22.89754166797502,
+        "metric": "sea",
+        "delta": 0.03,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 420,
+        "cache_refreshes": 372,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.4696969696969697,
+        "cache_hit_rate": 0.5303030303030303,
+        "avg_rel_l1": 1.7826790605269949,
+        "max_consecutive_hits": 3,
+        "denoiser_time_sec": 25.761473480262794,
+        "elapsed_sec": 31.66209954797523,
+        "metric": "sea",
+        "delta": 0.05,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 502,
+        "cache_refreshes": 290,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.3661616161616162,
+        "cache_hit_rate": 0.6338383838383839,
+        "avg_rel_l1": 1.782697507628728,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 19.40384425065713,
+        "elapsed_sec": 25.173485182982404,
+        "metric": "sea",
+        "delta": 0.08,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 524,
+        "cache_refreshes": 268,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.3383838383838384,
+        "cache_hit_rate": 0.6616161616161617,
+        "avg_rel_l1": 1.7826971448374023,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 10.033030838239938,
+        "elapsed_sec": 11.442627215990797,
+        "metric": "sea",
+        "delta": 0.1,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 559,
+        "cache_refreshes": 233,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.29419191919191917,
+        "cache_hit_rate": 0.7058080808080808,
+        "avg_rel_l1": 1.7826772627160066,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 16.040393511066213,
+        "elapsed_sec": 22.07704826502595,
+        "metric": "sea",
+        "delta": 0.15,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 568,
+        "cache_refreshes": 224,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.2828282828282828,
+        "cache_hit_rate": 0.7171717171717171,
+        "avg_rel_l1": 1.782683599664407,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 16.152301609225105,
+        "elapsed_sec": 22.548050224024337,
+        "metric": "sea",
+        "delta": 0.2,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 576,
+        "cache_refreshes": 216,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.2727272727272727,
+        "cache_hit_rate": 0.7272727272727273,
+        "avg_rel_l1": 1.782682636604933,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 15.487113118113484,
+        "elapsed_sec": 21.8994679999887,
+        "metric": "sea",
+        "delta": 0.3,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 592,
+        "cache_refreshes": 200,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.25252525252525254,
+        "cache_hit_rate": 0.7474747474747475,
+        "avg_rel_l1": 1.7826144938893718,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 14.299003939086106,
+        "elapsed_sec": 20.735337749007158,
+        "metric": "sea",
+        "delta": 0.5,
+        "calib_samples": 8
+      },
+      {
+        "cache_queries": 792,
+        "cache_hits": 592,
+        "cache_refreshes": 200,
+        "cache_forced_refreshes": 48,
+        "actual_rr": 0.25252525252525254,
+        "cache_hit_rate": 0.7474747474747475,
+        "avg_rel_l1": 1.7826354928340638,
+        "max_consecutive_hits": 4,
+        "denoiser_time_sec": 14.33018882595934,
+        "elapsed_sec": 20.834894504980184,
+        "metric": "sea",
+        "delta": 0.8,
+        "calib_samples": 8
+      }
+    ]
+  },
+  "methods": [
+    {
+      "name": "full_reference",
+      "num_samples": 64,
+      "elapsed_sec": 364.95621715602465,
+      "per_sample_csv": null,
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/full_reference",
+      "metrics": {},
+      "cache_queries": 6336,
+      "cache_hits": 0,
+      "cache_refreshes": 6336,
+      "cache_forced_refreshes": 6336,
+      "actual_rr": 1.0,
+      "cache_hit_rate": 0.0,
+      "avg_rel_l1": 0.0,
+      "max_consecutive_hits": 0,
+      "denoiser_time_sec": 344.8786641958868,
+      "kind": "full",
+      "target_rr": 1.0,
+      "delta": null
+    },
+    {
+      "name": "uniform_rr0p3",
+      "num_samples": 64,
+      "elapsed_sec": 151.82471715897555,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/uniform_rr0p3/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/uniform_rr0p3",
+      "metrics": {
+        "psnr_db": {
+          "mean": 24.94379550218582,
+          "min": 17.86086654663086,
+          "max": 35.05201721191406
+        },
+        "ssim": {
+          "mean": 0.8890805142000318,
+          "min": 0.6415596008300781,
+          "max": 0.9812963008880615
+        },
+        "lpips": {
+          "mean": 0.18110365787288174,
+          "min": 0.026560544967651367,
+          "max": 0.5770443081855774
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 4416,
+      "cache_refreshes": 1920,
+      "cache_forced_refreshes": 1920,
+      "actual_rr": 0.30303030303030304,
+      "cache_hit_rate": 0.696969696969697,
+      "avg_rel_l1": 0.0,
+      "max_consecutive_hits": 3,
+      "denoiser_time_sec": 126.51184345327783,
+      "kind": "uniform",
+      "target_rr": 0.3,
+      "delta": null
+    },
+    {
+      "name": "uniform_rr0p5",
+      "num_samples": 64,
+      "elapsed_sec": 259.17774231004296,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/uniform_rr0p5/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/uniform_rr0p5",
+      "metrics": {
+        "psnr_db": {
+          "mean": 27.577701419591904,
+          "min": 19.14980697631836,
+          "max": 38.228431701660156
+        },
+        "ssim": {
+          "mean": 0.9181419676169753,
+          "min": 0.6335365772247314,
+          "max": 0.9905819892883301
+        },
+        "lpips": {
+          "mean": 0.13641823866055347,
+          "min": 0.015874063596129417,
+          "max": 0.5540981888771057
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 3136,
+      "cache_refreshes": 3200,
+      "cache_forced_refreshes": 3200,
+      "actual_rr": 0.5050505050505051,
+      "cache_hit_rate": 0.494949494949495,
+      "avg_rel_l1": 0.0,
+      "max_consecutive_hits": 1,
+      "denoiser_time_sec": 227.84620903641917,
+      "kind": "uniform",
+      "target_rr": 0.5,
+      "delta": null
+    },
+    {
+      "name": "raw_online_rr0p3_delta0p08",
+      "num_samples": 64,
+      "elapsed_sec": 169.96247755299555,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/raw_online_rr0p3_delta0p08/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/raw_online_rr0p3_delta0p08",
+      "metrics": {
+        "psnr_db": {
+          "mean": 29.370282292366028,
+          "min": 23.243404388427734,
+          "max": 37.545379638671875
+        },
+        "ssim": {
+          "mean": 0.9359668465331197,
+          "min": 0.6658932566642761,
+          "max": 0.9926325678825378
+        },
+        "lpips": {
+          "mean": 0.11023998659220524,
+          "min": 0.015424687415361404,
+          "max": 0.563050389289856
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 4607,
+      "cache_refreshes": 1729,
+      "cache_forced_refreshes": 384,
+      "actual_rr": 0.272885101010101,
+      "cache_hit_rate": 0.727114898989899,
+      "avg_rel_l1": 0.02136842271085257,
+      "max_consecutive_hits": 4,
+      "denoiser_time_sec": 120.05922537308652,
+      "kind": "raw_online",
+      "target_rr": 0.3,
+      "delta": 0.08,
+      "calibration_actual_rr": 0.27525252525252525
+    },
+    {
+      "name": "raw_online_rr0p5_delta0p03",
+      "num_samples": 64,
+      "elapsed_sec": 284.5682642040192,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/raw_online_rr0p5_delta0p03/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/raw_online_rr0p5_delta0p03",
+      "metrics": {
+        "psnr_db": {
+          "mean": 47.8102810382843,
+          "min": 29.170902252197266,
+          "max": 59.914527893066406
+        },
+        "ssim": {
+          "mean": 0.9949961369857192,
+          "min": 0.9250342845916748,
+          "max": 0.999935507774353
+        },
+        "lpips": {
+          "mean": 0.011152301244010232,
+          "min": 0.00012507497740443796,
+          "max": 0.1631801724433899
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 2944,
+      "cache_refreshes": 3392,
+      "cache_forced_refreshes": 384,
+      "actual_rr": 0.5353535353535354,
+      "cache_hit_rate": 0.46464646464646464,
+      "avg_rel_l1": 0.02144014716431932,
+      "max_consecutive_hits": 1,
+      "denoiser_time_sec": 234.43621585622896,
+      "kind": "raw_online",
+      "target_rr": 0.5,
+      "delta": 0.03,
+      "calibration_actual_rr": 0.5353535353535354
+    },
+    {
+      "name": "sea_online_rr0p3_delta0p15",
+      "num_samples": 64,
+      "elapsed_sec": 167.2185330070206,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/sea_online_rr0p3_delta0p15/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/sea_online_rr0p3_delta0p15",
+      "metrics": {
+        "psnr_db": {
+          "mean": 35.18697011470795,
+          "min": 28.003503799438477,
+          "max": 44.666099548339844
+        },
+        "ssim": {
+          "mean": 0.9729912849143147,
+          "min": 0.9252249002456665,
+          "max": 0.997811496257782
+        },
+        "lpips": {
+          "mean": 0.046053913109062705,
+          "min": 0.00227908743545413,
+          "max": 0.17512983083724976
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 4478,
+      "cache_refreshes": 1858,
+      "cache_forced_refreshes": 384,
+      "actual_rr": 0.2932449494949495,
+      "cache_hit_rate": 0.7067550505050505,
+      "avg_rel_l1": 1.775785485537138,
+      "max_consecutive_hits": 4,
+      "denoiser_time_sec": 121.43395566003164,
+      "kind": "sea_online",
+      "target_rr": 0.3,
+      "delta": 0.15,
+      "calibration_actual_rr": 0.29419191919191917
+    },
+    {
+      "name": "sea_online_rr0p5_delta0p05",
+      "num_samples": 64,
+      "elapsed_sec": 251.65508716198383,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/sea_online_rr0p5_delta0p05/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/sea_online_rr0p5_delta0p05",
+      "metrics": {
+        "psnr_db": {
+          "mean": 44.235795855522156,
+          "min": 29.313701629638672,
+          "max": 56.32396697998047
+        },
+        "ssim": {
+          "mean": 0.9940996440127492,
+          "min": 0.9274517893791199,
+          "max": 0.999923586845398
+        },
+        "lpips": {
+          "mean": 0.012883387392776058,
+          "min": 0.0001992825127672404,
+          "max": 0.15925566852092743
+        }
+      },
+      "cache_queries": 6336,
+      "cache_hits": 3394,
+      "cache_refreshes": 2942,
+      "cache_forced_refreshes": 384,
+      "actual_rr": 0.46433080808080807,
+      "cache_hit_rate": 0.5356691919191919,
+      "avg_rel_l1": 1.7757881223318148,
+      "max_consecutive_hits": 3,
+      "denoiser_time_sec": 202.21414339437615,
+      "kind": "sea_online",
+      "target_rr": 0.5,
+      "delta": 0.05,
+      "calibration_actual_rr": 0.4696969696969697
+    }
+  ],
+  "summary_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/e1_pilot_64_fp32/method_summary.csv"
+}

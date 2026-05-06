@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "config": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/configs_c2i/PixelGen_XL_without_CFG.yaml",
+    "ckpt": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/ckpts/PixelGen_XL_80ep.ckpt",
+    "output_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample",
+    "device": "cuda:0",
+    "torch_version": "2.7.1+cu126",
+    "cuda_device_name": "NVIDIA GeForce RTX 3090",
+    "num_samples": 1,
+    "batch_size": 1,
+    "latent_shape": [
+      3,
+      256,
+      256
+    ],
+    "sampler": "HeunSamplerJiT",
+    "num_steps": 50,
+    "denoiser_opportunities_per_sample": 99,
+    "allow_fused_sdpa": false,
+    "no_autocast": true,
+    "lpips_status": "skipped",
+    "load_info": {
+      "loaded": 406,
+      "total": 406,
+      "missing": 0,
+      "mismatched": 0,
+      "used_prefixes": [
+        "ema_denoiser."
+      ],
+      "missing_examples": [],
+      "mismatched_examples": []
+    },
+    "args": {
+      "config": "configs_c2i/PixelGen_XL_without_CFG.yaml",
+      "ckpt": "ckpts/PixelGen_XL_80ep.ckpt",
+      "output_dir": "outputs/e1_online_cache",
+      "run_id": "smoke_e1_1sample",
+      "device": "cuda:0",
+      "batch_size": 1,
+      "num_samples": 1,
+      "classes": null,
+      "seeds": null,
+      "seed_start": 0,
+      "noise_scale": 1.0,
+      "methods": "uniform,raw,sea",
+      "target_rrs": "0.30",
+      "online_deltas": "0.10",
+      "calibrate_online": false,
+      "calib_samples": 8,
+      "warmup_calls": 5,
+      "max_skip_calls": 4,
+      "sea_filter_beta": 2.0,
+      "sea_filter_eps": 1e-06,
+      "autocast_dtype": "bf16",
+      "no_autocast": true,
+      "allow_tf32": false,
+      "deterministic_algorithms": false,
+      "allow_fused_sdpa": false,
+      "global_seed": 2026,
+      "skip_lpips": true,
+      "lpips_net": "alex",
+      "save_image_count": 1,
+      "preview_size": 128,
+      "preview_columns": 4,
+      "weight_prefixes": "ema_denoiser.,denoiser.,"
+    }
+  },
+  "calibration": {},
+  "methods": [
+    {
+      "name": "full_reference",
+      "num_samples": 1,
+      "elapsed_sec": 13.922965697012842,
+      "per_sample_csv": null,
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/full_reference",
+      "metrics": {},
+      "cache_queries": 99,
+      "cache_hits": 0,
+      "cache_refreshes": 99,
+      "cache_forced_refreshes": 99,
+      "actual_rr": 1.0,
+      "cache_hit_rate": 0.0,
+      "avg_rel_l1": 0.0,
+      "max_consecutive_hits": 0,
+      "denoiser_time_sec": 13.17500626918627,
+      "kind": "full",
+      "target_rr": 1.0,
+      "delta": null
+    },
+    {
+      "name": "uniform_rr0p3",
+      "num_samples": 1,
+      "elapsed_sec": 2.6832047239877284,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/uniform_rr0p3/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/uniform_rr0p3",
+      "metrics": {
+        "psnr_db": {
+          "mean": 23.055511474609375,
+          "min": 23.055511474609375,
+          "max": 23.055511474609375
+        },
+        "ssim": {
+          "mean": 0.8247503042221069,
+          "min": 0.8247503042221069,
+          "max": 0.8247503042221069
+        },
+        "lpips": {
+          "mean": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "cache_queries": 99,
+      "cache_hits": 69,
+      "cache_refreshes": 30,
+      "cache_forced_refreshes": 30,
+      "actual_rr": 0.30303030303030304,
+      "cache_hit_rate": 0.696969696969697,
+      "avg_rel_l1": 0.0,
+      "max_consecutive_hits": 3,
+      "denoiser_time_sec": 2.1589340991922654,
+      "kind": "uniform",
+      "target_rr": 0.3,
+      "delta": null
+    },
+    {
+      "name": "raw_online_delta0p1",
+      "num_samples": 1,
+      "elapsed_sec": 2.8119338210090064,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/raw_online_delta0p1/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/raw_online_delta0p1",
+      "metrics": {
+        "psnr_db": {
+          "mean": 25.67767906188965,
+          "min": 25.67767906188965,
+          "max": 25.67767906188965
+        },
+        "ssim": {
+          "mean": 0.9025168418884277,
+          "min": 0.9025168418884277,
+          "max": 0.9025168418884277
+        },
+        "lpips": {
+          "mean": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "cache_queries": 99,
+      "cache_hits": 73,
+      "cache_refreshes": 26,
+      "cache_forced_refreshes": 6,
+      "actual_rr": 0.26262626262626265,
+      "cache_hit_rate": 0.7373737373737373,
+      "avg_rel_l1": 0.02219942440986013,
+      "max_consecutive_hits": 4,
+      "denoiser_time_sec": 1.9197380830883048,
+      "kind": "raw_online",
+      "target_rr": null,
+      "delta": 0.1
+    },
+    {
+      "name": "sea_online_delta0p1",
+      "num_samples": 1,
+      "elapsed_sec": 3.2885294380248524,
+      "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/sea_online_delta0p1/per_sample_metrics.csv",
+      "method_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/sea_online_delta0p1",
+      "metrics": {
+        "psnr_db": {
+          "mean": 40.398094177246094,
+          "min": 40.398094177246094,
+          "max": 40.398094177246094
+        },
+        "ssim": {
+          "mean": 0.9929224848747253,
+          "min": 0.9929224848747253,
+          "max": 0.9929224848747253
+        },
+        "lpips": {
+          "mean": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "cache_queries": 99,
+      "cache_hits": 65,
+      "cache_refreshes": 34,
+      "cache_forced_refreshes": 6,
+      "actual_rr": 0.3434343434343434,
+      "cache_hit_rate": 0.6565656565656566,
+      "avg_rel_l1": 1.7881922624001096,
+      "max_consecutive_hits": 4,
+      "denoiser_time_sec": 2.286014663055539,
+      "kind": "sea_online",
+      "target_rr": null,
+      "delta": 0.1
+    }
+  ],
+  "summary_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e1_online_cache/smoke_e1_1sample/method_summary.csv"
+}

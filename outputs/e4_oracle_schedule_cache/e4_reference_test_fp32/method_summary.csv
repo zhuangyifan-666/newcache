@@ -1,0 +1,2 @@
+name,kind,target_rr,selected_delta,schedule_path,e3_schedule_actual_rr_all,online_calibration_actual_rr,num_samples,elapsed_sec,cache_queries,cache_hits,cache_refreshes,cache_forced_refreshes,actual_rr,cache_hit_rate,denoiser_time_sec,max_consecutive_hits,psnr_mean,psnr_min,ssim_mean,ssim_min,lpips_mean,lpips_max,per_sample_csv
+full_reference,full,1.0,,,,,192,1351.1780237329658,19008,0,19008,19008,1.0,0.0,1336.8142176996917,0,,,,,,,

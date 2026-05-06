@@ -1,0 +1,83 @@
+{
+  "config": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/configs_c2i/PixelGen_XL_without_CFG.yaml",
+  "ckpt": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/ckpts/PixelGen_XL_80ep.ckpt",
+  "output_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e0_sanity/e0_32samples_fp32",
+  "device": "cuda:0",
+  "torch_version": "2.7.1+cu126",
+  "cuda_device_name": "NVIDIA GeForce RTX 3090",
+  "allow_fused_sdpa": false,
+  "num_pairs": 32,
+  "latent_shape": [
+    3,
+    256,
+    256
+  ],
+  "sampler": "HeunSamplerJiT",
+  "num_steps": 50,
+  "guidance": 1.0,
+  "timeshift": 2.0,
+  "exact_henu": true,
+  "weight_load": {
+    "loaded": 406,
+    "total": 406,
+    "missing": 0,
+    "mismatched": 0,
+    "used_prefixes": [
+      "ema_denoiser."
+    ],
+    "missing_examples": [],
+    "mismatched_examples": []
+  },
+  "args": {
+    "config": "configs_c2i/PixelGen_XL_without_CFG.yaml",
+    "ckpt": "ckpts/PixelGen_XL_80ep.ckpt",
+    "output_dir": "outputs/e0_sanity",
+    "run_id": "e0_32samples_fp32",
+    "device": "cuda:0",
+    "batch_size": 1,
+    "num_samples": 32,
+    "classes": null,
+    "seeds": null,
+    "seed_start": 0,
+    "noise_scale": 1.0,
+    "autocast_dtype": "bf16",
+    "no_autocast": true,
+    "allow_tf32": false,
+    "deterministic_algorithms": false,
+    "allow_fused_sdpa": false,
+    "global_seed": 2026,
+    "preview_count": 8,
+    "preview_size": 128,
+    "preview_columns": 4,
+    "max_abs_tol": 1e-05,
+    "min_psnr": 80.0,
+    "weight_prefixes": "ema_denoiser.,denoiser.,"
+  },
+  "run_a": {
+    "elapsed_sec": 132.7646342649823,
+    "denoiser_calls": 3168,
+    "xhat_predictor_global_min": -1.2425068616867065,
+    "xhat_predictor_global_max": 1.3298829793930054,
+    "xhat_corrector_global_min": -1.2391996383666992,
+    "xhat_corrector_global_max": 1.3270163536071777
+  },
+  "run_b": {
+    "elapsed_sec": 125.357005191996,
+    "denoiser_calls": 3168,
+    "xhat_predictor_global_min": -1.2425068616867065,
+    "xhat_predictor_global_max": 1.3298829793930054,
+    "xhat_corrector_global_min": -1.2391996383666992,
+    "xhat_corrector_global_max": 1.3270163536071777
+  },
+  "comparison": {
+    "passed": true,
+    "num_samples": 32,
+    "max_abs": 2.3245811462402344e-06,
+    "mean_max_abs": 7.264316082000732e-08,
+    "min_psnr_db": 141.8889462376401,
+    "mean_psnr_db": 141.8889462376401,
+    "uint8_equal_count": 31,
+    "uint8_equal_fraction": 0.96875,
+    "per_sample_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e0_sanity/e0_32samples_fp32/per_sample_determinism.csv"
+  }
+}

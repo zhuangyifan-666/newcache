@@ -1,0 +1,126 @@
+{
+  "candidate": "candidate_a",
+  "candidate_label": "A_soft_early_dino",
+  "stage_weights": "early=0.75,0.25,0.00;middle=0.45,0.45,0.10;late=0.25,0.35,0.40",
+  "schedule_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_a/matched_schedules",
+  "normalization": {
+    "raw": {
+      "median": 0.018181102816015482,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 3.523367429470745,
+      "transform": "identity"
+    },
+    "sea": {
+      "median": 0.020624883003657217,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 249.14755799041197,
+      "transform": "log1p"
+    },
+    "dino": {
+      "median": 0.00019428133964538574,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 248.49331799355704,
+      "transform": "identity"
+    },
+    "lpips": {
+      "median": 0.0002564102178439498,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 218.98109866440987,
+      "transform": "identity"
+    },
+    "pma_nogate_weights": {
+      "sea": 0.4,
+      "dino": 0.3,
+      "lpips": 0.3
+    },
+    "pma_stage_weights": {
+      "early": {
+        "sea": 0.75,
+        "dino": 0.25,
+        "lpips": 0.0
+      },
+      "middle": {
+        "sea": 0.45,
+        "dino": 0.45,
+        "lpips": 0.1
+      },
+      "late": {
+        "sea": 0.25,
+        "dino": 0.35,
+        "lpips": 0.4
+      }
+    }
+  },
+  "schedule_rows": [
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.3,
+      "selected_delta": 6.997307753389326,
+      "calibration_rr": 0.30003156565656564,
+      "test_rr": 0.3051872895622896,
+      "all_rr": 0.30389835858585856,
+      "calibration_refreshes_per_sample": 29.703125,
+      "test_refreshes_per_sample": 30.213541666666668,
+      "all_refreshes_per_sample": 30.0859375,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_a",
+      "candidate_label": "A_soft_early_dino",
+      "stage_weights": "early=0.75,0.25,0.00;middle=0.45,0.45,0.10;late=0.25,0.35,0.40",
+      "target_abs_error": 3.156565656564636e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012261476751262183,
+      "max_sample_score_sum": 738.1485701116777,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_a/matched_schedules/pma_stageaware_oracle_rr0p30.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.4,
+      "selected_delta": 3.460640333567599,
+      "calibration_rr": 0.3999368686868687,
+      "test_rr": 0.4045138888888889,
+      "all_rr": 0.4033696338383838,
+      "calibration_refreshes_per_sample": 39.59375,
+      "test_refreshes_per_sample": 40.046875,
+      "all_refreshes_per_sample": 39.93359375,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_a",
+      "candidate_label": "A_soft_early_dino",
+      "stage_weights": "early=0.75,0.25,0.00;middle=0.45,0.45,0.10;late=0.25,0.35,0.40",
+      "target_abs_error": 6.313131313134823e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012261476751262183,
+      "max_sample_score_sum": 738.1485701116777,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_a/matched_schedules/pma_stageaware_oracle_rr0p40.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.5,
+      "selected_delta": 1.7957879355026332,
+      "calibration_rr": 0.5,
+      "test_rr": 0.5048926767676768,
+      "all_rr": 0.5036695075757576,
+      "calibration_refreshes_per_sample": 49.5,
+      "test_refreshes_per_sample": 49.984375,
+      "all_refreshes_per_sample": 49.86328125,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_a",
+      "candidate_label": "A_soft_early_dino",
+      "stage_weights": "early=0.75,0.25,0.00;middle=0.45,0.45,0.10;late=0.25,0.35,0.40",
+      "target_abs_error": 0.0,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0012261476751262183,
+      "max_sample_score_sum": 738.1485701116777,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_a/matched_schedules/pma_stageaware_oracle_rr0p50.npz"
+    }
+  ]
+}

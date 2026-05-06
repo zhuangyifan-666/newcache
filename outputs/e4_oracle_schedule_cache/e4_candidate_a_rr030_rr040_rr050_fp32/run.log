@@ -1,0 +1,13 @@
+current sampler is ODE sampler, but w_scheduler is enabled
+/root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+[E4] Loaded reference tensor from /mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_oracle_schedule_cache/e4_reference_test_fp32/reference_images.pt
+[E4] Running pma_stageaware_oracle_rr0p30 on 192 samples
+[E4] Running pma_stageaware_oracle_rr0p40 on 192 samples
+[E4] Running pma_stageaware_oracle_rr0p50 on 192 samples
+[E4] Summary written to /mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_oracle_schedule_cache/e4_candidate_a_rr030_rr040_rr050_fp32/summary.json
+[E4] Method table written to /mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_oracle_schedule_cache/e4_candidate_a_rr030_rr040_rr050_fp32/method_summary.csv

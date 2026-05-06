@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="480.0" y="24" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">E3 stage refresh density rr0p50</text>
+<line x1="72" y1="420" x2="924" y2="420" stroke="#111827"/>
+<line x1="72" y1="46" x2="72" y2="420" stroke="#111827"/>
+<line x1="72" y1="420.0" x2="924" y2="420.0" stroke="#e5e7eb"/>
+<text x="64" y="424.0" text-anchor="end" font-family="Arial" font-size="11">0.00</text>
+<line x1="72" y1="345.2" x2="924" y2="345.2" stroke="#e5e7eb"/>
+<text x="64" y="349.2" text-anchor="end" font-family="Arial" font-size="11">0.13</text>
+<line x1="72" y1="270.4" x2="924" y2="270.4" stroke="#e5e7eb"/>
+<text x="64" y="274.4" text-anchor="end" font-family="Arial" font-size="11">0.27</text>
+<line x1="72" y1="195.6" x2="924" y2="195.6" stroke="#e5e7eb"/>
+<text x="64" y="199.6" text-anchor="end" font-family="Arial" font-size="11">0.40</text>
+<line x1="72" y1="120.8" x2="924" y2="120.8" stroke="#e5e7eb"/>
+<text x="64" y="124.8" text-anchor="end" font-family="Arial" font-size="11">0.54</text>
+<line x1="72" y1="46.0" x2="924" y2="46.0" stroke="#e5e7eb"/>
+<text x="64" y="50.0" text-anchor="end" font-family="Arial" font-size="11">0.67</text>
+<rect x="108.2" y="105.8" width="46.9" height="314.2" fill="#2563eb"/>
+<rect x="155.1" y="156.6" width="46.9" height="263.4" fill="#16a34a"/>
+<rect x="201.9" y="152.3" width="46.9" height="267.7" fill="#dc2626"/>
+<text x="178.5" y="438" text-anchor="end" transform="rotate(-25 178.5 438)" font-family="Arial" font-size="11">uniform</text>
+<rect x="321.2" y="88.4" width="46.9" height="331.6" fill="#2563eb"/>
+<rect x="368.1" y="181.0" width="46.9" height="239.0" fill="#16a34a"/>
+<rect x="414.9" y="133.2" width="46.9" height="286.8" fill="#dc2626"/>
+<text x="391.5" y="438" text-anchor="end" transform="rotate(-25 391.5 438)" font-family="Arial" font-size="11">raw_oracle</text>
+<rect x="534.2" y="87.3" width="46.9" height="332.7" fill="#2563eb"/>
+<rect x="581.1" y="181.8" width="46.9" height="238.2" fill="#16a34a"/>
+<rect x="627.9" y="137.7" width="46.9" height="282.3" fill="#dc2626"/>
+<text x="604.5" y="438" text-anchor="end" transform="rotate(-25 604.5 438)" font-family="Arial" font-size="11">sea_oracle</text>
+<rect x="747.2" y="87.3" width="46.9" height="332.7" fill="#2563eb"/>
+<rect x="794.1" y="163.4" width="46.9" height="256.6" fill="#16a34a"/>
+<rect x="840.9" y="164.9" width="46.9" height="255.1" fill="#dc2626"/>
+<text x="817.5" y="438" text-anchor="end" transform="rotate(-25 817.5 438)" font-family="Arial" font-size="11">pma_stageaware_oracle</text>
+<rect x="754" y="52" width="12" height="12" fill="#2563eb"/>
+<text x="772" y="63" font-family="Arial" font-size="12">early</text>
+<rect x="824" y="52" width="12" height="12" fill="#16a34a"/>
+<text x="842" y="63" font-family="Arial" font-size="12">middle</text>
+<rect x="894" y="52" width="12" height="12" fill="#dc2626"/>
+<text x="912" y="63" font-family="Arial" font-size="12">late</text>
+</svg>

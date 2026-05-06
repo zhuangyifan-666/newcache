@@ -1,0 +1,126 @@
+{
+  "candidate": "candidate_c",
+  "candidate_label": "C_sea_heavy_low_rr",
+  "stage_weights": "early=0.85,0.15,0.00;middle=0.55,0.35,0.10;late=0.35,0.30,0.35",
+  "schedule_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_c/matched_schedules",
+  "normalization": {
+    "raw": {
+      "median": 0.018181102816015482,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 3.523367429470745,
+      "transform": "identity"
+    },
+    "sea": {
+      "median": 0.020624883003657217,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 249.14755799041197,
+      "transform": "log1p"
+    },
+    "dino": {
+      "median": 0.00019428133964538574,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 248.49331799355704,
+      "transform": "identity"
+    },
+    "lpips": {
+      "median": 0.0002564102178439498,
+      "eps": 1e-08,
+      "clip_percentile": 99.0,
+      "clip_value": 218.98109866440987,
+      "transform": "identity"
+    },
+    "pma_nogate_weights": {
+      "sea": 0.4,
+      "dino": 0.3,
+      "lpips": 0.3
+    },
+    "pma_stage_weights": {
+      "early": {
+        "sea": 0.85,
+        "dino": 0.15,
+        "lpips": 0.0
+      },
+      "middle": {
+        "sea": 0.55,
+        "dino": 0.35,
+        "lpips": 0.1
+      },
+      "late": {
+        "sea": 0.35,
+        "dino": 0.3,
+        "lpips": 0.35
+      }
+    }
+  },
+  "schedule_rows": [
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.3,
+      "selected_delta": 6.77740271729618,
+      "calibration_rr": 0.30003156565656564,
+      "test_rr": 0.3033459595959596,
+      "all_rr": 0.3025173611111111,
+      "calibration_refreshes_per_sample": 29.703125,
+      "test_refreshes_per_sample": 30.03125,
+      "all_refreshes_per_sample": 29.94921875,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_c",
+      "candidate_label": "C_sea_heavy_low_rr",
+      "stage_weights": "early=0.85,0.15,0.00;middle=0.55,0.35,0.10;late=0.35,0.30,0.35",
+      "target_abs_error": 3.156565656564636e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0013260503415149897,
+      "max_sample_score_sum": 573.8537960177754,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_c/matched_schedules/pma_stageaware_oracle_rr0p30.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.4,
+      "selected_delta": 3.456015678272398,
+      "calibration_rr": 0.3999368686868687,
+      "test_rr": 0.4029882154882155,
+      "all_rr": 0.4022253787878788,
+      "calibration_refreshes_per_sample": 39.59375,
+      "test_refreshes_per_sample": 39.895833333333336,
+      "all_refreshes_per_sample": 39.8203125,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_c",
+      "candidate_label": "C_sea_heavy_low_rr",
+      "stage_weights": "early=0.85,0.15,0.00;middle=0.55,0.35,0.10;late=0.35,0.30,0.35",
+      "target_abs_error": 6.313131313134823e-05,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0013260503415149897,
+      "max_sample_score_sum": 573.8537960177754,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_c/matched_schedules/pma_stageaware_oracle_rr0p40.npz"
+    },
+    {
+      "method": "pma_stageaware_oracle",
+      "target_rr": 0.5,
+      "selected_delta": 1.8432083617452788,
+      "calibration_rr": 0.5,
+      "test_rr": 0.5050505050505051,
+      "all_rr": 0.5037878787878788,
+      "calibration_refreshes_per_sample": 49.5,
+      "test_refreshes_per_sample": 50.0,
+      "all_refreshes_per_sample": 49.875,
+      "calibration_samples": 64,
+      "test_samples": 192,
+      "all_samples": 256,
+      "candidate": "candidate_c",
+      "candidate_label": "C_sea_heavy_low_rr",
+      "stage_weights": "early=0.85,0.15,0.00;middle=0.55,0.35,0.10;late=0.35,0.30,0.35",
+      "target_abs_error": 0.0,
+      "target_rr_reachable": true,
+      "min_positive_score": 0.0013260503415149897,
+      "max_sample_score_sum": 573.8537960177754,
+      "schedule_path": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e4_pma_weight_candidates/e4_pma_weight_candidates_from_e2_fp32_calib64/candidate_c/matched_schedules/pma_stageaware_oracle_rr0p50.npz"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+index,class_id,seed,max_abs,mean_abs,mse,psnr_db,uint8_equal
+0,0,0,0.015220090746879578,0.0012168658431619406,3.7204063119133934e-06,60.31469618815454,False
+1,1,1,0.0,0.0,0.0,inf,True
