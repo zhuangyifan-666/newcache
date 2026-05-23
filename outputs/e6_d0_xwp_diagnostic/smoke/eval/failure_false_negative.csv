@@ -1,0 +1,2 @@
+score_column,sample_id,sample_index,window_id,start_call,end_call,window_len,stage,pis_total_rank,pis_lpips,pis_dino,score_value,rank_percentile
+R_xwp_ode_vector,0,0,16,3,6,4,early,1.9660714285714285,0.2537075281143188,0.1757243275642395,1.1008951631864794,0.6842105263157895

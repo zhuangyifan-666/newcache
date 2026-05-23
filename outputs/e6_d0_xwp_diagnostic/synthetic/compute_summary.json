@@ -1,0 +1,151 @@
+{
+  "labels": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e6_d0_labels/e55_window_labels.csv",
+  "fulltraj": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e6_d0_fulltraj/synthetic",
+  "out": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e6_d0_xwp_diagnostic/synthetic",
+  "device": "cpu",
+  "proxy_size": 16,
+  "beta": 2.0,
+  "f0": 0.03,
+  "epsilon_clip": 0.05,
+  "eta_list": [
+    0.0,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "score_subset": null,
+  "risk_table": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e6_d0_xwp_diagnostic/synthetic/window_risk_table.csv",
+  "num_label_rows": 20,
+  "num_output_rows": 20,
+  "num_valid_risk": 20,
+  "num_invalid_risk": 0,
+  "invalid_reason_counts": {},
+  "score_stats": {
+    "R_time_len": {
+      "min": 1.0,
+      "mean": 1.75,
+      "max": 4.0
+    },
+    "R_time_sum_ode": {
+      "min": 0.010204081623052797,
+      "mean": 0.019458513769795852,
+      "max": 0.04255560363031248
+    },
+    "R_time_mean_t": {
+      "min": 0.010101010091602802,
+      "mean": 0.0979797984706238,
+      "max": 0.49494948983192444
+    },
+    "R_time_inv_1mt": {
+      "min": 1.0102040816230529,
+      "mean": 1.9263931327832957,
+      "max": 4.213004370749054
+    },
+    "R_raw_adj": {
+      "min": 0.013504528440535069,
+      "mean": 0.025435607135295867,
+      "max": 0.057728552259504795
+    },
+    "R_raw_anchor": {
+      "min": 0.013504528440535069,
+      "mean": 0.026234368048608302,
+      "max": 0.06246143393218517
+    },
+    "R_sea_adj": {
+      "min": 0.01021494995802641,
+      "mean": 0.4259720583911985,
+      "max": 2.181097679771483
+    },
+    "R_sea_anchor": {
+      "min": 0.006709764711558819,
+      "mean": 0.023568773991428316,
+      "max": 0.058477090671658516
+    },
+    "R_xw_adj": {
+      "min": 0.010214990936219692,
+      "mean": 0.47296244464814663,
+      "max": 2.5052453484386206
+    },
+    "R_xw_anchor": {
+      "min": 0.7502343058586121,
+      "mean": 2.2219899624586104,
+      "max": 5.382265210151672
+    },
+    "R_xwp_anchor": {
+      "min": 0.916071355342865,
+      "mean": 2.7375607937574387,
+      "max": 6.634295582771301
+    },
+    "R_xwp_ode_scalar": {
+      "min": 0.014984104084008484,
+      "mean": 0.02983132559223946,
+      "max": 0.07058033987904157
+    },
+    "R_xwp_ode_vector": {
+      "min": 0.9160713354143684,
+      "mean": 1.5222101619320008,
+      "max": 1.662922042450664
+    },
+    "R_uncertainty_sum": {
+      "min": 0.0997622013092041,
+      "mean": 1.278351928293705,
+      "max": 3.6999917030334473
+    },
+    "R_uncertainty_mean": {
+      "min": 0.0997622013092041,
+      "mean": 0.6757603853940963,
+      "max": 0.9648326635360718
+    },
+    "R_xwp_ode_scalar_u_eta0p03": {
+      "min": 0.0213142574691166,
+      "mean": 0.06818188344105061,
+      "max": 0.17476248582610118
+    },
+    "R_xwp_ode_scalar_u_eta0p1": {
+      "min": 0.028297611560760886,
+      "mean": 0.15766651842161,
+      "max": 0.4337619050384425
+    },
+    "R_xwp_ode_scalar_u_eta0p3": {
+      "min": 0.048250051822601704,
+      "mean": 0.413336904080351,
+      "max": 1.173760245645132
+    },
+    "R_xwp_ode_vector_u_eta0p03": {
+      "min": 0.9190642014536445,
+      "mean": 1.5605607197808118,
+      "max": 1.749267497984891
+    },
+    "R_xwp_ode_vector_u_eta0p1": {
+      "min": 0.9260475555452887,
+      "mean": 1.6500453547613714,
+      "max": 1.9853551695032168
+    },
+    "R_xwp_ode_vector_u_eta0p3": {
+      "min": 0.9459999958071296,
+      "mean": 1.9057157404201122,
+      "max": 2.6779810112542775
+    },
+    "R_oracle_xhat_scalar": {
+      "min": 0.0005921888330663697,
+      "mean": 0.0012451015676307451,
+      "max": 0.0028102106358156367
+    },
+    "R_oracle_xhat_vector": {
+      "min": 0.045376687433913064,
+      "mean": 0.05914166924586324,
+      "max": 0.07995299385840064
+    },
+    "R_oracle_xhat_scalar_u_eta0p1": {
+      "min": 0.011378434848162916,
+      "mean": 0.12908029439700125,
+      "max": 0.3726564260371443
+    },
+    "R_oracle_xhat_vector_u_eta0p1": {
+      "min": 0.07976298777358636,
+      "mean": 0.18697686207523373,
+      "max": 0.4235920538219037
+    }
+  },
+  "elapsed_sec": 0.29294310696423054
+}

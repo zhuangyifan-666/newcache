@@ -6,3 +6,6 @@ pretrained_weights
 wandb
 merge_weight.py
 *.pyc
+outputs/e6_d0_fulltraj/
+outputs/e6_d0_fulltraj/**/*.pt
+outputs/e6_d0_xwp_diagnostic/*/sample_*.pt
