@@ -1,0 +1,25 @@
+nohup: ignoring input
+current sampler is ODE sampler, but w_scheduler is enabled
+/root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /root/miniconda3/envs/pixelgen/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+[E5] Running single-skip PIS on 8 samples, 99/99 selected calls per sample
+[E5] Sample 0/7: class=0 seed=0
+[E5] Sample 1/7: class=1 seed=1
+[E5] Sample 2/7: class=2 seed=2
+[E5] Sample 3/7: class=3 seed=3
+[E5] Sample 4/7: class=4 seed=4
+[E5] Sample 5/7: class=5 seed=5
+[E5] Sample 6/7: class=6 seed=6
+[E5] Sample 7/7: class=7 seed=7
+[E5] Summary written to /mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_pis_bank/e5_main8_fullcalls_fp32/summary.json
+[E5] PIS bank written to /mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_pis_bank/e5_main8_fullcalls_fp32/pis_bank.npz

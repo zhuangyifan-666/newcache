@@ -1,0 +1,2 @@
+sample_index,window_id,start_call,end_call,window_len,available_single_count,single_sum_lpips,window_lpips,ratio_lpips,single_sum_dino,window_dino,ratio_dino
+0,0,1,1,1,1,0.21497765183448792,0.21497765183448792,0.9999999534835391,0.14951986074447632,0.14951986074447632,0.9999999331192574

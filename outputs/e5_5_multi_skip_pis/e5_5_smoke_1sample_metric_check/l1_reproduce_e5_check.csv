@@ -1,0 +1,2 @@
+sample_index,window_id,call_index,e55_lpips,e5_lpips,abs_diff_lpips,e55_dino,e5_dino,abs_diff_dino
+0,0,1,0.21497765183448792,0.21497765183448792,0.0,0.14951986074447632,0.14951986074447632,0.0

@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "config": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/configs_c2i/PixelGen_XL_without_CFG.yaml",
+    "ckpt": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/ckpts/PixelGen_XL_80ep.ckpt",
+    "output_dir": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2",
+    "device": "cuda:0",
+    "torch_version": "2.7.1+cu126",
+    "cuda_device_name": "NVIDIA GeForce RTX 3090",
+    "num_samples": 1,
+    "latent_shape": [
+      3,
+      256,
+      256
+    ],
+    "sampler": "HeunSamplerJiT",
+    "num_steps": 50,
+    "denoiser_opportunities_per_sample": 99,
+    "windows_preset": "smoke",
+    "total_windows": 13,
+    "selected_windows_this_shard": 13,
+    "shard_id": 0,
+    "num_shards": 1,
+    "floor_samples": 0,
+    "allow_fused_sdpa": false,
+    "no_autocast": true,
+    "lpips_source": "skipped",
+    "dino_source": "skipped",
+    "dino_feature": "patch_mean",
+    "dino_size": 224,
+    "e5_summary_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_pis_bank/e5_main8_fullcalls_fp32/pis_summary.csv",
+    "e5_synergy_rows": 13,
+    "l1_reproduce_e5_rows": 6,
+    "load_info": {
+      "loaded": 406,
+      "total": 406,
+      "missing": 0,
+      "mismatched": 0,
+      "used_prefixes": [
+        "ema_denoiser."
+      ],
+      "missing_examples": [],
+      "mismatched_examples": []
+    },
+    "args": {
+      "config": "configs_c2i/PixelGen_XL_without_CFG.yaml",
+      "ckpt": "ckpts/PixelGen_XL_80ep.ckpt",
+      "output_dir": "outputs/e5_5_multi_skip_pis",
+      "run_id": "e5_5_smoke_1sample_nometric_check_v2",
+      "device": "cuda:0",
+      "num_samples": 1,
+      "classes": "0",
+      "seeds": "0",
+      "seed_start": 0,
+      "noise_scale": 1.0,
+      "windows_csv": null,
+      "windows_preset": "smoke",
+      "total_calls": 99,
+      "write_windows_only": false,
+      "resume": false,
+      "shard_id": 0,
+      "num_shards": 1,
+      "floor_samples": 0,
+      "e5_summary_csv": "outputs/e5_pis_bank/e5_main8_fullcalls_fp32/pis_summary.csv",
+      "autocast_dtype": "bf16",
+      "no_autocast": true,
+      "allow_tf32": false,
+      "deterministic_algorithms": false,
+      "allow_fused_sdpa": false,
+      "global_seed": 2026,
+      "skip_lpips": true,
+      "lpips_net": "alex",
+      "skip_dino": true,
+      "dino_repo": "/root/.cache/torch/hub/facebookresearch_dinov2_main",
+      "dino_model": "dinov2_vitb14",
+      "dino_feature": "patch_mean",
+      "dino_size": 224,
+      "dino_batch_size": 8,
+      "save_image_count": 0,
+      "top_visual_count": 0,
+      "safe_visual_count": 0,
+      "safe_long_min_len": 4,
+      "preview_size": 128,
+      "preview_columns": 4,
+      "weight_prefixes": "ema_denoiser.,denoiser.,"
+    }
+  },
+  "elapsed_sec": 36.75532388803549,
+  "valid_interventions": 13,
+  "pis_window_bank": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/pis_window_bank.npz",
+  "windows_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/windows.csv",
+  "selected_windows_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/selected_windows.csv",
+  "pis_window_summary_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/pis_window_summary.csv",
+  "pis_window_aggregate_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/pis_window_aggregate.csv",
+  "pis_safe_age_by_stage_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/pis_safe_age_by_stage.csv",
+  "pis_synergy_with_e5_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/pis_synergy_with_e5.csv",
+  "l1_reproduce_e5_check_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/l1_reproduce_e5_check.csv",
+  "full_rerun_floor_csv": "/mnt/iset/nfs-main/private/zhuangyifan/try/PixelGen/outputs/e5_5_multi_skip_pis/e5_5_smoke_1sample_nometric_check_v2/full_rerun_floor.csv",
+  "heatmaps_written": {
+    "heatmap_lpips_mean.png": false,
+    "heatmap_lpips_q95.png": false,
+    "heatmap_dino_mean.png": false,
+    "heatmap_dino_q95.png": false
+  },
+  "metric_summary": {
+    "pis_lpips": {
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "pis_dino": {
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "pis_psnr": {
+      "mean": 52.91481399536133,
+      "min": 28.50106430053711,
+      "max": 98.45295715332031
+    },
+    "pis_ssim": {
+      "mean": 0.9870046973228455,
+      "min": 0.9172950983047485,
+      "max": 1.0
+    }
+  },
+  "floor_summary": {
+    "floor_lpips": {
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "floor_dino": {
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "floor_psnr": {
+      "mean": null,
+      "min": null,
+      "max": null
+    },
+    "floor_ssim": {
+      "mean": null,
+      "min": null,
+      "max": null
+    }
+  }
+}

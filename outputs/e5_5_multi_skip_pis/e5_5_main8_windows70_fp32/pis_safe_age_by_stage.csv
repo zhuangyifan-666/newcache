@@ -1,0 +1,6 @@
+stage,start_range,safe_len_mean,safe_len_q95,recommended_max_age_for_e6,reason
+sanity,1-98,0,0,,"L=1 sanity rows are for E5 reproduction, not an E6 stage policy."
+early,1-8,0,0,0,No tested length passes the conservative mean/q95 LPIPS+DINO safety rule.
+transition,8-17,0,0,0,No tested length passes the conservative mean/q95 LPIPS+DINO safety rule.
+mid,16-87,2,2,1,Conservative half of the largest fully safe tested window length.
+tail,88-97,2,2,1,Conservative half of the largest fully safe tested window length.

@@ -1,0 +1,2 @@
+sample_index,class_id,seed,window_id,stage,start_call,end_call,window_len,start_step,end_step,start_t,end_t,start_call_kind,end_call_kind,num_predictor,num_corrector,intervention_valid,invalid_reason,pis_lpips,pis_dino,pis_psnr,pis_ssim,suffix_denoiser_calls,skipped_calls,elapsed_sec,reference_image,intervention_image
+0,0,0,0,sanity,1,1,1,0,0,0.010101010091602802,0.010101010091602802,corrector,corrector,0,1,True,,0.21497765183448792,0.14951986074447632,28.50106430053711,0.9172950983047485,98,1,3.6869031849782914,,

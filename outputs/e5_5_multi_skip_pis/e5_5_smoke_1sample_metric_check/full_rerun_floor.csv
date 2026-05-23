@@ -1,0 +1,2 @@
+sample_index,class_id,seed,floor_lpips,floor_dino,floor_psnr,floor_ssim,elapsed_sec
+0,0,0,1.7490327762492708e-12,-1.1920928955078125e-07,141.88894653320312,1.0,3.9209251368883997

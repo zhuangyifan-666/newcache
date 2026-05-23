@@ -1,0 +1,14 @@
+window_id,stage,start_call,end_call,window_len,valid_count,mean_lpips,median_lpips,q90_lpips,q95_lpips,max_lpips,mean_dino,median_dino,q90_dino,q95_dino,max_dino,mean_psnr,q05_psnr,mean_ssim,q05_ssim,failure_rate_lpips_gt_0p001,failure_rate_lpips_gt_0p005,failure_rate_lpips_gt_0p01,failure_rate_lpips_gt_0p02,failure_rate_dino_gt_0p001,failure_rate_dino_gt_0p005,failure_rate_dino_gt_0p01,failure_rate_dino_gt_0p02,status
+0,sanity,1,1,1,1,0.21497765183448792,0.21497765183448792,0.21497765183448792,0.21497765183448792,0.21497765183448792,0.14951986074447632,0.14951986074447632,0.14951986074447632,0.14951986074447632,0.14951986074447632,28.50106430053711,28.50106430053711,0.9172950983047485,0.9172950983047485,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,dangerous
+1,sanity,3,3,1,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+2,sanity,7,7,1,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+3,sanity,16,16,1,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+4,sanity,64,64,1,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+5,sanity,96,96,1,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+6,transition,8,9,2,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+7,mid,16,17,2,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+8,mid,16,19,4,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+9,mid,32,35,4,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+10,mid,64,71,8,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+11,tail,90,91,2,0,,,,,,,,,,,,,,,,,,,,,,,unknown
+12,tail,94,97,4,0,,,,,,,,,,,,,,,,,,,,,,,unknown

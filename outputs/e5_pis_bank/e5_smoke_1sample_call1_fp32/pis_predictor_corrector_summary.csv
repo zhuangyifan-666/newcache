@@ -1,0 +1,3 @@
+call_kind,num_calls,valid_lpips_count,mean_pis_lpips,mean_pis_dino,mean_pis_psnr
+predictor,50,0,,,
+corrector,49,1,0.21497765183448792,0.14951986074447632,28.50106430053711

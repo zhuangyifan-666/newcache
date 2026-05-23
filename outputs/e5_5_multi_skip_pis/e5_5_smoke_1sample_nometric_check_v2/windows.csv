@@ -1,0 +1,14 @@
+window_id,stage,start_call,window_len,end_call,note
+0,sanity,1,1,1,match_e5_call1
+1,sanity,3,1,3,match_e5_call3
+2,sanity,7,1,7,match_e5_call7
+3,sanity,16,1,16,match_e5_call16
+4,sanity,64,1,64,match_e5_call64
+5,sanity,96,1,96,match_e5_call96
+6,transition,8,2,9,transition_len2
+7,mid,16,2,17,mid_len2
+8,mid,16,4,19,mid_len4
+9,mid,32,4,35,mid_len4
+10,mid,64,8,71,mid_len8
+11,tail,90,2,91,tail_len2
+12,tail,94,4,97,tail_len4
